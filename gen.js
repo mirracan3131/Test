@@ -1,6 +1,4 @@
 
-
-
 const crypto = require("crypto")
 const puppeteer = require('puppeteer-extra')
 const StealthPlugin = require('puppeteer-extra-plugin-stealth')
@@ -83,9 +81,9 @@ if (repeat < 2) {
     await DiscordPage.goto('https://discord.com/register', {"waitUntil" : "networkidle0", timeout: 70000});
 
     write_log(true, "                                  \x1B[36m[\x1B[36m\x1B[37m>>>\x1B[37m\x1B[36m]\x1B[36m \x1B[37mDiscord Token Nearly Finished...!");
-    await click_date(DiscordPage, "Year", 20,08 );
-    await click_date(DiscordPage, "Day", 2, 2);
-    await click_date(DiscordPage, "Month", 0, 6);
+    await click_date(DiscordPage, "Year", 15,15 );
+    await click_date(DiscordPage, "Day", 22, 22);
+    await click_date(DiscordPage, "Month", 06, 06);
 
     DiscordPage.waitForSelector('input[type*=checkbox]').then(() => {
       DiscordPage.$eval('input[type*=checkbox]', el => el.click());
